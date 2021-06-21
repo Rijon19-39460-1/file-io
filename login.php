@@ -35,7 +35,7 @@ if(!$flag)
     $users=json_decode($fileData);
 	foreach($users as $user)
 	{
-	if($user->username === $_POST["username"] && $user->password === $_POST["password"])
+	if($user->username === $username && $user->password === $password)
 	$flag = true;
 	}
     if($flag)
